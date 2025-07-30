@@ -7,7 +7,6 @@
 
 .header_section {
     background-color: whitesmoke;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -25,6 +24,7 @@ h1 {
     display: flex;
     align-items: center;
     padding-left: 40px;
+    font-family: "Bitcount Prop Double", system-ui;
 }
 
 nav ul {
@@ -45,9 +45,21 @@ nav ul li a {
 }
 
 .hero_section {
-    margin-top: 5%;
-    max-width: 550px;
-    margin-left: 45px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    padding: 20px;
+    padding: 25px 18px;
+}
+
+.hero_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12%;
+    padding: 28px 18px;
 }
 
 .greetings {
@@ -67,14 +79,35 @@ nav ul li a {
 }
 
 .name {
-    font-family: "Arimo", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 35px;
     margin-bottom: 10px;
+    font-style: normal;
 }
 
 .description {
     font-family: "Arimo", sans-serif;
     font-weight: 200;
     margin-bottom: 10px;
+    color: rgb(151, 147, 147);
+    font-style: italic;
+}
+
+.about_section {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 1200px;
+    padding: 25px 18px;
+    background-color: whitesmoke;
+}
+
+.about_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 35px 18px;
+    border-radius: 12%;
 }
